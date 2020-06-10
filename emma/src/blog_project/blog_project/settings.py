@@ -42,7 +42,7 @@ INSTALLED_APPS = [
 
     'article',
     'authenticate',
-    'social_django',
+    
 ]
 
 MIDDLEWARE = [
@@ -53,7 +53,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',  
-    'social_django.middleware.SocialAuthExceptionMiddleware',   # <--
+    
 ]
 
 ROOT_URLCONF = 'blog_project.urls'
@@ -72,8 +72,7 @@ TEMPLATES = [
 
 
 
-                'social_django.context_processors.backends',  # <--
-                'social_django.context_processors.login_redirect', # <--
+               
             ],
         },
     },
@@ -145,15 +144,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 
-AUTHENTICATION_BACKENDS = (
-
-    'social_core.backends.github.GithubOAuth2',
-  
-    'social_core.backends.facebook.FacebookOAuth2',
-
-    'django.contrib.auth.backends.ModelBackend',
-)
-#SITE_ID=1
 
 
 
