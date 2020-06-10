@@ -21,10 +21,10 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, 'article/templates/article')
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '^pxi(li#hiq0ti2)+8(ya1ynle3&p@rdg3bmkte9sdpi)-mlsk'
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -157,13 +157,13 @@ AUTHENTICATION_BACKENDS = (
 
 
 
-SOCIAL_AUTH_FACEBOOK_KEY = '629994744394125'  # App ID
-SOCIAL_AUTH_FACEBOOK_SECRET = '5b1230d84d7d0df3cd2a7c99673f0ab0'  # App Secret
+SOCIAL_AUTH_FACEBOOK_KEY = ''  # App ID
+SOCIAL_AUTH_FACEBOOK_SECRET = ''  # App Secret
 
 
 
-SOCIAL_AUTH_GITHUB_KEY = '9423db26318716eba494'
-SOCIAL_AUTH_GITHUB_SECRET = '073603c591abf8c1329e2d4d37958ae808fd454d'
+SOCIAL_AUTH_GITHUB_KEY = ''
+SOCIAL_AUTH_GITHUB_SECRET = ''
 
 
 
